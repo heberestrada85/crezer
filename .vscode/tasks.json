@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "RemovePid",
+            "command": "rm",
+            "type": "shell",
+            "args": [
+                "${workspaceFolder}/tmp/pids/server.pid"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "KillProcess",
+            "command": "kill -9 $(lsof -ti:3010)",
+            "type": "shell",
+            "args": [
+                ""
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Dependecies",
+            "command": "bundle",
+            "type": "shell",
+            "args": [
+                "install"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Build",
+            "dependsOn": [
+                "RemovePid",
+                // "KillProcess",
+                // "Dependecies"
+            ]
+        }
+    ]
+}

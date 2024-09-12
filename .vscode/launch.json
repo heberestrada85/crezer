@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Rails Server",
+      "type": "rdbg",
+      "request": "launch",
+      "command": "ruby",
+      "script": "${workspaceFolder}/bin/rails",
+      "args": [
+        "s",
+        "-p 3000",
+        "-b 0.0.0.0"
+      ],
+      "preLaunchTask": "Build",
+      "useBundler": true,
+      "askParameters": false,
+      "env": {
+          "RAILS_ENV": "development",
+          "DATABASE_HOST": "localhost",
+          "DATABASE_PORT": "5432",
+          "DATABASE_PASSWORD": "30083008",
+          "DATABASE_USER": "postgres",
+          "DATABASE_DATABASE": "nudge-big-green",
+          "SMTP_USER": "xxxx",
+          "SMTP_PASSWORD": "xxxx",
+          "SMTP_SERVER": "xxxxxx.com",
+          "SMTP_PORT": "587",
+          "SMTP_MAIL_FROM": "no-reply@xxxx.com",
+      }
+    }
+  ]
+}
