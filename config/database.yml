@@ -8,22 +8,21 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
-  username: <%= ENV["DATABASE_USER"] %>
-  password: <%= ENV["DATABASE_PASSWORD"] %>
-  host: <%= ENV["DATABASE_HOST"] %>
-  port: <%= ENV["DATABASE_PORT"] %>
+  port: 5432
+  host: <%= ENV['POSTGRES_HOST'] %>
+  user: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 development:
   <<: *default
-  database: <%= ENV["DATABASE_DATABASE"] %>_development
+  database: abs_test
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV["DATABASE_DATABASE"] %>_test
+  database: abs_test
 
 
 # SQLite3 write its data on the local filesystem, as such it requires
@@ -34,4 +33,4 @@ test:
 # ensure the database is located in a persisted volume.
 production:
   <<: *default
-  database: <%= ENV["DATABASE_DATABASE"] %>
+  # database: path/to/persistent/storage/production.sqlite3

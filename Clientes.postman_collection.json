@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "d3071424-80f9-4791-a6b1-e82672bcc3a7",
+		"name": "Clientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16726633"
+	},
+	"item": [
+		{
+			"name": "Get All Clients",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJqdGkiOiIyNTVkN2U5Yi03ZmQ3LTQyMDMtOTM0Ny02ZTY5NjQ5MzY1MTMiLCJpYXQiOjE3MzAzNDgyMDAsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3MzAzNDgyMDAsImV4cCI6MTczMDM5MTQwMCwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.0M7ajm2mIqzqQDad_ytvHALSvqsb9RHZFEjbEdKwb6g"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJqdGkiOiJiZWY5YTk1Mi0xMmVkLTQ0NzMtYWVmZC03OTg4NGQwZWM2ZmMiLCJpYXQiOjE3Mjk4MzM0MTIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3Mjk4MzM0MTEsImV4cCI6MTcyOTg3NjYxMSwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.z7rncruZN-551pOysrz0SnODiRQ13b0coCSw1BOSQl0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "http://localhost:3000/clients.json"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Client by Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJqdGkiOiIyNTVkN2U5Yi03ZmQ3LTQyMDMtOTM0Ny02ZTY5NjQ5MzY1MTMiLCJpYXQiOjE3MzAzNDgyMDAsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3MzAzNDgyMDAsImV4cCI6MTczMDM5MTQwMCwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.0M7ajm2mIqzqQDad_ytvHALSvqsb9RHZFEjbEdKwb6g"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJqdGkiOiJiZWY5YTk1Mi0xMmVkLTQ0NzMtYWVmZC03OTg4NGQwZWM2ZmMiLCJpYXQiOjE3Mjk4MzM0MTIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3Mjk4MzM0MTEsImV4cCI6MTcyOTg3NjYxMSwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.z7rncruZN-551pOysrz0SnODiRQ13b0coCSw1BOSQl0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "http://localhost:3000/clients/1.json"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a New Client",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJqdGkiOiIyNTVkN2U5Yi03ZmQ3LTQyMDMtOTM0Ny02ZTY5NjQ5MzY1MTMiLCJpYXQiOjE3MzAzNDgyMDAsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3MzAzNDgyMDAsImV4cCI6MTczMDM5MTQwMCwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.0M7ajm2mIqzqQDad_ytvHALSvqsb9RHZFEjbEdKwb6g"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJqdGkiOiJiZWY5YTk1Mi0xMmVkLTQ0NzMtYWVmZC03OTg4NGQwZWM2ZmMiLCJpYXQiOjE3Mjk4MzM0MTIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3Mjk4MzM0MTEsImV4cCI6MTcyOTg3NjYxMSwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.z7rncruZN-551pOysrz0SnODiRQ13b0coCSw1BOSQl0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client\": {\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"second_surname\": \"Sanchez\",\n        \"street\": \"Siempreviva\",\n        \"neighborhood\": \"Altamirano\",\n        \"city\": \"Parras\",\n        \"state\": \"Coahuila\",\n        \"zipcode\": \"27989\",\n        \"rfc\": \"XAXX010101000\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/clients.json"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Client by Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJqdGkiOiIyNTVkN2U5Yi03ZmQ3LTQyMDMtOTM0Ny02ZTY5NjQ5MzY1MTMiLCJpYXQiOjE3MzAzNDgyMDAsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3MzAzNDgyMDAsImV4cCI6MTczMDM5MTQwMCwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.0M7ajm2mIqzqQDad_ytvHALSvqsb9RHZFEjbEdKwb6g"
+					}
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJqdGkiOiJiZWY5YTk1Mi0xMmVkLTQ0NzMtYWVmZC03OTg4NGQwZWM2ZmMiLCJpYXQiOjE3Mjk4MzM0MTIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3Mjk4MzM0MTEsImV4cCI6MTcyOTg3NjYxMSwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.z7rncruZN-551pOysrz0SnODiRQ13b0coCSw1BOSQl0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client\": {\n        \"name\": \"John\",\n        \"surname\": \"Doe2\",\n        \"second_surname\": \"Sanchez2\",\n        \"street\": \"Siempreviva2\",\n        \"neighborhood\": \"Altamirano\",\n        \"city\": \"Parras\",\n        \"state\": \"Coahuila\",\n        \"zipcode\": \"27989\",\n        \"rfc\": \"XAXX010101000\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/clients/1.json"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Client by Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiJkZjI1NGY3ZC0yMThiLTRjMTUtOWQwOC1iZWY2NTllZDcyMzIiLCJqdGkiOiIyNTVkN2U5Yi03ZmQ3LTQyMDMtOTM0Ny02ZTY5NjQ5MzY1MTMiLCJpYXQiOjE3MzAzNDgyMDAsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3MzAzNDgyMDAsImV4cCI6MTczMDM5MTQwMCwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.0M7ajm2mIqzqQDad_ytvHALSvqsb9RHZFEjbEdKwb6g"
+					}
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImRldmVsb3BtZW50QGRldi5jb20iLCJzdWIiOiIwOTE4YjRmZi05NDU4LTQ2NDUtYmFlMC04YWE2YmI2MTZiODEiLCJqdGkiOiJiZWY5YTk1Mi0xMmVkLTQ0NzMtYWVmZC03OTg4NGQwZWM2ZmMiLCJpYXQiOjE3Mjk4MzM0MTIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJuYmYiOjE3Mjk4MzM0MTEsImV4cCI6MTcyOTg3NjYxMSwiaXNzIjoiVGFkYUFwcElzc3VlciIsImF1ZCI6IlRhZGFBcHAifQ.z7rncruZN-551pOysrz0SnODiRQ13b0coCSw1BOSQl0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "http://localhost:3000/clients/1.json"
+			},
+			"response": []
+		}
+	]
+}

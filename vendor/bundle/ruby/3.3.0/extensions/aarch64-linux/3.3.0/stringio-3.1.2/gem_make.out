@@ -1,0 +1,18 @@
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+/usr/local/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241113-1538-w0s443 sitelibdir\=./.gem.20241113-1538-w0s443 clean
+
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241113-1538-w0s443 sitelibdir\=./.gem.20241113-1538-w0s443
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241113-1538-w0s443 sitelibdir\=./.gem.20241113-1538-w0s443 install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20241113-1538-w0s443
+
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241113-1538-w0s443 sitelibdir\=./.gem.20241113-1538-w0s443 clean
